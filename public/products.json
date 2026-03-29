@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Builder",
+    "description": "Create stunning personal portfolios with modern UI design.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Responsive design", "Easy customization", "SEO friendly"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+  },
+  {
+    "id": 3,
+    "name": "E-commerce Toolkit",
+    "description": "All-in-one solution to launch your online store.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Cart system", "Payment gateway", "Product management"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+  },
+  {
+    "id": 4,
+    "name": "UI Components Kit",
+    "description": "Reusable UI components to speed up your development.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Tailwind support", "Dark mode", "Customizable"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/2920/2920277.png"
+  },
+  {
+    "id": 5,
+    "name": "Frontend Course",
+    "description": "Learn HTML, CSS, JS, and React step by step.",
+    "price": 120,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Projects", "Certificate", "Lifetime access"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1006/1006771.png"
+  },
+  {
+    "id": 6,
+    "name": "Landing Page Kit",
+    "description": "High-converting landing pages for your business.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Fast loading", "Mobile responsive", "Modern UI"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/4149/4149678.png"
+  },
+  {
+    "id": 7,
+    "name": "API Toolkit",
+    "description": "Simplify API integrations in your projects.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["REST support", "Authentication", "Error handling"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3062/3062634.png"
+  },
+  {
+    "id": 8,
+    "name": "Admin Dashboard",
+    "description": "Ready-made dashboard with charts and analytics.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Charts", "User management", "Responsive"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1995/1995574.png"
+  },
+  {
+    "id": 9,
+    "name": "SEO Tool",
+    "description": "Boost your website ranking with smart SEO tools.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Keyword analysis", "On-page SEO", "Tracking"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/4248/4248443.png"
+  },
+  {
+    "id": 10,
+    "name": "Cloud Hosting",
+    "description": "Fast and secure hosting for your applications.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["99.9% uptime", "Free SSL", "Scalable"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
+  }
+]
