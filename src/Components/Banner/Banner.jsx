@@ -17,10 +17,10 @@ const Banner = () => {
             </span>
           </h2>
           <div className="space-y-4 mt-4">
-            <h2 className="text-3xl sm:text-7xl font-extrabold">
+            <h2 className="text-3xl sm:text-7xl font-extrabold leading-10 sm:leading-21">
               Supercharge Your Digital Workflow
             </h2>
-            <p className="max-w-[640px]">
+            <p className="max-w-[640px] leading-5 text-gray-400">
               Access premium AI tools, design assets, templates, and
               productivity software—all in one place. Start creating faster
               today. Explore Products
