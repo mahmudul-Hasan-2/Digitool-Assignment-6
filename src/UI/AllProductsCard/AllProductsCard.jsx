@@ -1,5 +1,5 @@
+import { Check } from "lucide-react";
 import React, { useState } from "react";
-import { SiTicktick } from "react-icons/si";
 import { toast } from "react-toastify";
 
 const AllProductsCard = ({ product, setCartItems, cartItems }) => {
@@ -42,9 +42,9 @@ const AllProductsCard = ({ product, setCartItems, cartItems }) => {
         </span>
       </div>
       <div className="space-y-2">
-        {product.features.map((feature) => (
-          <p className="flex items-center gap-2">
-            <SiTicktick className="text-green-500" />
+        {product.features.map((feature, ind) => (
+          <p className="flex items-center gap-2" key={ind}>
+            <Check className="text-green-500" />
             {feature}
           </p>
         ))}
@@ -57,7 +57,7 @@ const AllProductsCard = ({ product, setCartItems, cartItems }) => {
         >
           {isSelected ? (
             <span className="flex items-center gap-2">
-              <SiTicktick className="text-green-400" /> Added To Cart
+              <Check className="text-green-400" /> Added To Cart
             </span>
           ) : (
             "Buy Now"

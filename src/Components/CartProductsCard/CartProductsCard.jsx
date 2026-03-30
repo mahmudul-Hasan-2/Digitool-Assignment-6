@@ -19,7 +19,7 @@ const CartProductsCard = ({ cartItems, setCartItems }) => {
 
       <div className="space-y-4 rounded-2xl">
         {cartItems.map((cartItem) => (
-          <CartCard handleDelete={handleDelete} cartItem={cartItem}></CartCard>
+          <CartCard handleDelete={handleDelete} key={cartItem.id} cartItem={cartItem}></CartCard>
         ))}
       </div>
 
