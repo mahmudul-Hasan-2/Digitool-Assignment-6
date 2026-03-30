@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Stats from "./Components/Stats/Stats";
 import Steps from "./Components/Steps/Steps";
 import Pricing from "./Components/Pricing/Pricing";
+import Newsletter from "./Components/Newsletter/Newsletter";
 
 // Fetching Products
 const fetchProducts = async () => {
@@ -43,6 +44,10 @@ function App() {
       <Steps></Steps>
       {/* Pricing */}
       <Pricing></Pricing>
+      {/* Newsletter */}
+      <Newsletter></Newsletter>
+      {/* Footer */}
+      
     </>
   );
 }
