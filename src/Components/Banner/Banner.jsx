@@ -27,10 +27,10 @@ const Banner = () => {
             </p>
           </div>
           <div className="flex items-center mt-8 gap-4 flex-col sm:flex-row">
-            <button className="btn gradient rounded-full text-white h-14 w-full sm:w-[32%] hover:-translate-y-2 transition-all duration-1000">
+            <button className="btn gradient rounded-full text-white h-14 hover:-translate-y-2 transition-all duration-1000">
               Explore Products
             </button>
-            <div className="p-[1.5px] w-full sm:w-[32%] bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full inline-block group h-14 hover:-translate-y-2 duration-1000">
+            <div className="p-[1.5px] bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full inline-block group h-14 hover:-translate-y-2 duration-1000">
               <button className="btn bg-white w-full hover:bg-gray-50 text-purple-600 border-none rounded-full flex items-center gap-2 py-4 min-h-0 transition-all h-full">
                 <CiPlay1 size={24} className="stroke-[1.5]" />
 

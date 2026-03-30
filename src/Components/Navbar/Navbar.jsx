@@ -10,7 +10,7 @@ const navItems = [
   { id: 5, name: "FAQ", path: "/faq" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ cartItems }) => {
   const items = navItems.map((item) => (
     <a className="font-semibold" href={item.path} key={item.id}>
       {item.name}
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex gap-5 items-center ">
             <div className="relative inline-block p-2 md:mr-2 mr-0">
               <span className="absolute top-0 right-0 transform flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full">
-                0
+                {cartItems.length}
               </span>
               <BsCart2 size={25} />
             </div>
@@ -43,7 +43,11 @@ const Navbar = () => {
             </div>
           </div>
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden mx-2">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden mx-2"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
