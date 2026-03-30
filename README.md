@@ -1,16 +1,45 @@
-# React + Vite
+# 🚀 Digitool Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+</p>
 
-Currently, two official plugins are available:
+### 📝 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Digitool Platform** is a premium digital asset marketplace designed for modern creators. It provides a sleek, high-performance interface to browse, select, and manage digital tools like AI writers and e-commerce kits. The project focuses on a seamless user journey with a heavy emphasis on reactive UI and clean aesthetics.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Technology Stack
 
-## Expanding the ESLint configuration
+- **Core:** React.js (Vite)
+- **Styling:** Tailwind CSS (Custom Gradient Configuration)
+- **Icons:** Lucide Icons, React Icons (Tabler, FontAwesome)
+- **Notifications:** React Toastify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### ✨ Key Features
+
+- **💎 Premium Product Selection:** Features a dynamic grid of digital tools with custom gradient styling, hover effects, and a fully responsive layout for all screen sizes.
+- **🛒 Interactive Cart System:** A real-time shopping cart that tracks selections, calculates totals, and features a smart "Empty State" with motivational prompts when no items are chosen.
+- **⚡ Frictionless Checkout:** A smooth "Proceed to Checkout" flow that includes instant feedback via toast notifications and automatic cart clearing upon successful "payment."
+
+---
+
+### 🚀 How to Run Locally
+
+1. **Clone the project:**
+   ```bash
+   git clone [https://github.com/your-username/digitool-platform.git](https://github.com/your-username/digitool-platform.git)
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
