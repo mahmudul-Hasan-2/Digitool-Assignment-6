@@ -35,7 +35,9 @@ const PricingCard = ({ plans }) => {
         </p>
       ))}
       <div>
-        <button className={`btn ${plans.isPopular ? "btn-white text-[#4F39F6]" : "gradient text-white"} w-full`}>
+        <button
+          className={`transform hover:scale-105 transition-all duration-1000 btn ${plans.isPopular ? "btn-white text-[#4F39F6]" : "gradient text-white"} rounded-full w-full`}
+        >
           {plans.buttonText}
         </button>
       </div>

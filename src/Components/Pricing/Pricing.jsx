@@ -55,7 +55,7 @@ const Pricing = () => {
     <div className="width-container">
       <div className="mt-30">
         <div className="space-y-4 text-center mb-10">
-          <h2 className="text-5xl font-bold text-[#101727]">
+          <h2 className="text-2xl sm:text-5xl font-bold text-[#101727]">
             Simple, Transparent Pricing
           </h2>
           <p className="text-[#627382]">

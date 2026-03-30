@@ -57,7 +57,7 @@ const AllProductsCard = ({ product, setCartItems, cartItems }) => {
         >
           {isSelected ? (
             <span className="flex items-center gap-2">
-              <Check className="text-green-400" /> Added To Cart
+              <Check className="text-green-400" /> <span>Added To Cart</span>
             </span>
           ) : (
             "Buy Now"
