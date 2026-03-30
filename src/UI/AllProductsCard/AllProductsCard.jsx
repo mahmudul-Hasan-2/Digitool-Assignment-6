@@ -35,7 +35,7 @@ const AllProductsCard = ({ product, setCartItems, cartItems }) => {
       </div>
       <div>
         <span className="text-[#101727] text-2xl font-bold">
-          {product.price}
+          ${product.price}
         </span>
         <span className="text-gray-600">
           /{product.period === "Monthly" ? "Mo" : product.period}
@@ -50,7 +50,7 @@ const AllProductsCard = ({ product, setCartItems, cartItems }) => {
         ))}
       </div>
       <div>
-        <button
+        <a
           type="button"
           onClick={handleSelected}
           className={`btn ${isSelected ? "bg-green-800" : "gradient"} transform hover:scale-105 transition-all duration-1000 rounded-full text-white w-full`}
@@ -62,7 +62,7 @@ const AllProductsCard = ({ product, setCartItems, cartItems }) => {
           ) : (
             "Buy Now"
           )}
-        </button>
+        </a>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import Stats from "./Components/Stats/Stats";
 import Steps from "./Components/Steps/Steps";
 import Pricing from "./Components/Pricing/Pricing";
 import Newsletter from "./Components/Newsletter/Newsletter";
+import Footer from "./Components/Footer/Footer";
 
 // Fetching Products
 const fetchProducts = async () => {
@@ -14,8 +15,9 @@ const fetchProducts = async () => {
   return res.json();
 };
 
+const productPromise = fetchProducts();
+
 function App() {
-  const productPromise = fetchProducts();
   const [cartItems, setCartItems] = useState([]);
   console.log(productPromise);
   return (
@@ -47,7 +49,7 @@ function App() {
       {/* Newsletter */}
       <Newsletter></Newsletter>
       {/* Footer */}
-      
+      <Footer></Footer>
     </>
   );
 }
