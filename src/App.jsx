@@ -4,6 +4,7 @@ import Banner from "./Components/Banner/Banner";
 import MainProducts from "./Components/MainProducts/MainProducts";
 import Navbar from "./Components/Navbar/Navbar";
 import Stats from "./Components/Stats/Stats";
+import Steps from "./Components/Steps/Steps";
 
 // Fetching Products
 const fetchProducts = async () => {
@@ -37,6 +38,8 @@ function App() {
           productPromise={productPromise}
         ></MainProducts>
       </Suspense>
+      {/* Steps */}
+      <Steps></Steps>
     </>
   );
 }
