@@ -21,7 +21,7 @@ const Navbar = ({ cartItems }) => {
       <div className="navbar width-container">
         <div className="navbar-start">
           <a className="">
-            <img src={logoImg} alt="" />
+            <img src={logoImg} alt="" className="w-full h-full" />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">

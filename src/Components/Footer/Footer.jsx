@@ -113,9 +113,9 @@ const Footer = () => {
         <div className="flex items-center justify-between flex-col md:flex-row gap-2">
           <p>© 2026 Digitools. All rights reserved.</p>
           <div className="flex items-center gap-6 flex-wrap justify-center">
-            <p>Privacy Policy</p>
-            <p>Terms of Service</p>
-            <p>Cookies</p>
+            <p className="text-[#FAFAFA]">Privacy Policy</p>
+            <p className="text-[#FAFAFA]">Terms of Service</p>
+            <p className="text-[#FAFAFA]">Cookies</p>
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ const CartProductsCard = ({ cartItems, setCartItems }) => {
       <h2 className="text-2xl font-bold">Your Cart</h2>
       <div>
         {cartItems.length === 0 && (
-          <div className="p-5 sm:p-10 flex items-center justify-center flex-col border border-gray-300 rounded-2xl space-y-2">
+          <div className="px-5 py-10 sm:p-10 flex items-center justify-center flex-col border border-gray-300 rounded-2xl space-y-2">
             <TbAlertTriangleFilled size={100} className="text-yellow-500" />
             <p className="text-xs sm:text-[14px]">Your selection is empty!</p>
             <h1 className="text-lg sm:text-3xl font-bold">
