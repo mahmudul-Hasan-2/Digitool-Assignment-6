@@ -1,13 +1,15 @@
 import React from "react";
-import CartProductsCard from "../../UI/CartProductsCard/CartProductsCard";
+import CartProductsCard from "../CartProductsCard/CartProductsCard";
 import ErrorMessage from "../../UI/ErrorMessage/ErrorMessage";
 
-const CartProducts = ({ cartItems }) => {
+const CartProducts = ({ cartItems, setCartItems }) => {
   return (
     <div>
-      {cartItems.length === 0 ? <ErrorMessage></ErrorMessage> : cartItems.map((cartItem) => (
-        <CartProductsCard cartItem={cartItem}></CartProductsCard>
-      ))}
+      {cartItems.length === 0 ? (
+        <ErrorMessage></ErrorMessage>
+      ) : (
+        <CartProductsCard cartItems={cartItems} setCartItems={setCartItems}></CartProductsCard>
+      )}
     </div>
   );
 };

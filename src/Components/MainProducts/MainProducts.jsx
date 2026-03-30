@@ -45,7 +45,7 @@ const MainProducts = ({ productPromise, setCartItems, cartItems }) => {
             cartItems={cartItems}
           ></AllProducts>
         )}
-        {selectedType === "carts" && <CartProducts key={cartItems.id} cartItems={cartItems}></CartProducts>}
+        {selectedType === "carts" && <CartProducts key={cartItems.id} cartItems={cartItems} setCartItems={setCartItems}></CartProducts>}
       </div>
     </div>
   );

@@ -53,9 +53,15 @@ const AllProductsCard = ({ product, setCartItems, cartItems }) => {
         <button
           type="button"
           onClick={handleSelected}
-          className="btn gradient transform hover:scale-105 transition-all duration-1000 rounded-full text-white w-full"
+          className={`btn ${isSelected ? "bg-green-500" : "gradient"} transform hover:scale-105 transition-all duration-1000 rounded-full text-white w-full`}
         >
-          {isSelected ? "Added To Cart" : "Buy Now"}
+          {isSelected ? (
+            <span className="flex items-center gap-2">
+              <SiTicktick className="text-green-800" /> Added To Cart
+            </span>
+          ) : (
+            "Buy Now"
+          )}
         </button>
       </div>
     </div>
