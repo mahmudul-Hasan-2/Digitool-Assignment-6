@@ -4,8 +4,8 @@ import CartProducts from "../CartProducts/CartProducts";
 
 const MainProducts = ({ productPromise, setCartItems, cartItems }) => {
   const [selectedType, setSelectedPlayers] = useState("products");
-  const products = use(productPromise);
   console.log(cartItems);
+  const products = use(productPromise);
   return (
     <div className="width-container">
       <div className="mt-30">
