@@ -33,7 +33,7 @@
 
 1. **Clone the project:**
    ```bash
-   git clone [https://github.com/mahmudul-Hasan-2/Digitool-Assignment-6.git](https://github.com/mahmudul-Hasan-2/Digitool-Assignment-6.git)
+   git clone https://github.com/mahmudul-Hasan-2/Digitool-Assignment-6.git
    ```
 2. **Install dependencies:**
    ```bash
