@@ -1,9 +1,11 @@
 import React, { use, useState } from "react";
 import AllProducts from "../AllProducts/AllProducts";
+import CartProducts from "../CartProducts/CartProducts";
 
-const MainProducts = ({ productPromise }) => {
+const MainProducts = ({ productPromise, setCartItems, cartItems }) => {
   const [selectedType, setSelectedPlayers] = useState("products");
   const products = use(productPromise);
+  console.log(cartItems);
   return (
     <div className="width-container">
       <div className="mt-30">
@@ -30,13 +32,20 @@ const MainProducts = ({ productPromise }) => {
               className={`rounded-full px-6 py-3.5 cursor-pointer ${selectedType === "carts" ? "gradient shadow-lg text-white" : "bg-transparent shadow-none"}`}
               onClick={() => setSelectedPlayers("carts")}
             >
-              Cart (0)
+              Cart ({cartItems.length})
             </button>
           </div>
         </div>
       </div>
       <div>
-        {selectedType === "products" && <AllProducts products={products}></AllProducts>}
+        {selectedType === "products" && (
+          <AllProducts
+            setCartItems={setCartItems}
+            products={products}
+            cartItems={cartItems}
+          ></AllProducts>
+        )}
+        {selectedType === "carts" && <CartProducts key={cartItems.id} cartItems={cartItems}></CartProducts>}
       </div>
     </div>
   );

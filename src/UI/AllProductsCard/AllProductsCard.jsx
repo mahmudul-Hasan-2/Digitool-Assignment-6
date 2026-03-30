@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { SiTicktick } from "react-icons/si";
+import { toast } from "react-toastify";
 
-const AllProductsCard = ({ product }) => {
+const AllProductsCard = ({ product, setCartItems, cartItems }) => {
+  const [isSelected, setIsSelected] = useState(false);
+  const handleSelected = () => {
+    const finding = cartItems.find((c) => c.id === product.id);
+    if (finding) {
+      toast.warning(`${finding.name} has already added!`);
+      return;
+    } else {
+      setCartItems((prev) => [...prev, product]);
+    }
+    setIsSelected(true);
+    toast.success(`${product.name} Added Successfully`);
+  };
   return (
     <div className="p-6 border-2 border-[#F2F2F2] space-y-4">
       <div className="flex justify-end">
@@ -31,13 +44,19 @@ const AllProductsCard = ({ product }) => {
       <div className="space-y-2">
         {product.features.map((feature) => (
           <p className="flex items-center gap-2">
-            <SiTicktick className="text-green-500"/>
+            <SiTicktick className="text-green-500" />
             {feature}
           </p>
         ))}
       </div>
       <div>
-        <button className="btn gradient transform hover:scale-105 transition-all duration-1000 rounded-full text-white w-full">Buy Now</button>
+        <button
+          type="button"
+          onClick={handleSelected}
+          className="btn gradient transform hover:scale-105 transition-all duration-1000 rounded-full text-white w-full"
+        >
+          {isSelected ? "Added To Cart" : "Buy Now"}
+        </button>
       </div>
     </div>
   );

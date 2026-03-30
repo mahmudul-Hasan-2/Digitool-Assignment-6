@@ -24,8 +24,18 @@ function App() {
       {/* Stats */}
       <Stats></Stats>
       {/* MainProducts */}
-      <Suspense>
-        <MainProducts productPromise={productPromise}></MainProducts>
+      <Suspense
+        fallback={
+          <div className="flex items-center justify-center my-10">
+            <span className="loading loading-spinner loading-xl"></span>
+          </div>
+        }
+      >
+        <MainProducts
+          setCartItems={setCartItems}
+          cartItems={cartItems}
+          productPromise={productPromise}
+        ></MainProducts>
       </Suspense>
     </>
   );
